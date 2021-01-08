@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<style>
+		#form_fill{
+			background-image: "delhi.jpg"
+		}
+
+	</style>
+</head>
+<body>
+	<nav style="display: flex;flex-wrap: nowrap; background-color: lightblue ; padding: 10px">
+		<img src="logo.jpg" height="100" width="150">
+		<div style="border: 1px solid black ; padding: 10px ; margin-left: 300px" >
+			<h2>Ph.d</h2>
+			<p>(Not for Online)</p>
+		</div>
+		<div style="border: 1px solid black ; float: right; margin-left: 400px ; padding: 5px">
+			<h3>Paste your<br>passpost size <br>photo here</h3>
+		</div>
+
+	</nav>
+	<div style="text-align: center;">
+		<h2>Indian Institute Of Technology Delhi</h2>
+		<h3>Application form for admission in PhD Program</h3>
+		<p>Please read the informations carefully before you fill up the form <br>
+		(not to be used for online application)<br>
+		visit : <a href="###">www.iitdelhi.info.in</a>
+		</p>
+
+	</div>
+
+<div id = "form_fill" style="width: 100% ; text-align: center;   ">
+	<form action="/signup" method="post" style=" border: 1px solid black ;  ">
+  
+  
+    <label><h2>First name : </label>
+    <input type="text" name="first_name" required></h2>
+ 
+ 
+    <label><h2>Last name: </label>
+    <input type="text" name="last_name"></h2>
+  
+    <label><h2>Enter your Email : </label>
+    <input type="email" name="email" required></h2>
+  
+    <label><h2>Password </label>
+    <input type="password" name="password" required></h2>
+  
+    <label><h3>Gender :</label>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Mr
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Mrs
+    </label>
+    <label>
+      <input type="radio" name="title" value="miss">
+      Miss
+    </label>
+  
+    <label><h3>Phone number : </label>
+    <input type="tel" name="phone"></h3>
+  
+    <label>
+      <input type="checkbox" value="terms">
+      I agree to the <a href="/terms">terms and conditions</a>
+    </label>
+  <br><br><br>
+    <button style="font-size: 20px ; padding: 10px">Sign up</button>
+    <button type="reset" style="font-size: 20px ; padding: 10px">Reset form</button>
+  </p>
+</form>
+</div>
+
+
+	<!----------------------------------------------- Table for fom fill up------------------------------------------->
+	
+
+	<table border="1"    style="width: 100% ; margin: 10px ; border-collapse: collapse;">
+		<thead>
+			<tr>
+				<th colspan="2" ; rowspan="5"></th>
+				<th colspan="3" ; rowspan="5"> Full time with assistantship </th>
+				<th rowspan="5" colspan="3" >Employed Candidates (No assistantship)</th>
+			</tr>
+		</thead>
+		<tr>
+			<td colspan="2"></td>
+			<td colspan="3" style="text-align: center;">Source of assistantship</td>
+			<td>sponsored(full time)</td>
+			<td colspan="2">part time</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td colspan="2" rowspan="3" style="text-align: center;">M-Tech Degree     Institute</td>
+			<td style="text-align: center;" rowspan="3">CSIR</td>
+			<td rowspan="2"></td><td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Gate Description year </td><td>Gate Score Gate Marks</td>
+			<td>UGC NET</td>
+			<td>Experience</td><td>Experience</td><td></td>
+		</tr>
+	</table>
+</body>
+</html>
